@@ -29,8 +29,26 @@ $(function(){
 
 
 
-  
-
+  document.addEventListener("DOMContentLoaded", function () {
+    const els = document.querySelectorAll(".apealChild");
+    const cb = function (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("xSlide");
+          observer.unobserve(entry.target);
+          console.log(entry.target);
+        } else {
+        }
+      });
+    };
+    const options = {
+      root: null,
+      rootMargin: "-100px",
+      threshold: 0,
+    };
+    const io = new IntersectionObserver(cb, options);
+    els.forEach((el) => io.observe(el));
+  });
 
 
 function countdown(due) {
