@@ -5,7 +5,7 @@ function disableScroll(event) {
 function slider() {
   const btn = document.querySelector(".menu-content");
   const rotated = document.querySelector(".mobile-menu-icon");
-  const changeBg = document.querySelector(".black");
+  const changeBg = document.querySelector(".black-back");
   btn.classList.toggle("inview");
   rotated.classList.toggle("menu-open");
   changeBg.classList.toggle("blacky");
