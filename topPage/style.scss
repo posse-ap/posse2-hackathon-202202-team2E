@@ -757,3 +757,27 @@ header {
   }
 }
 
+footer{
+  background-color: rgb(201, 237, 248);
+  padding-top: 30px;
+  h1{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+    font-size: 30px;
+    text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+    }
+  }
+  .SNS_links{
+    a{
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
