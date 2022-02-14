@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap');
 #gameArea{
   width: 100%;
+  margin-bottom: 30px;
   .productTitle{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     font-family: "Kaisei Decol";
     font-size: 35px;
     text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
   }
-  #turnShower{
+
+  p{
     display: block;
     width: 50%;
+    max-width: 450px;
     margin: 0 auto;
-    margin-bottom: 20px;
+  }
+  #turnShower{
     font-size: 20px;
   }
   #board{
     width: 50vw;
+    max-width: 450px;
+    max-height: 450px;
     height: 50vw;
     display: flex;
     flex-wrap: wrap;
     border: solid black 1px;
     padding: 0;
-    margin: 0 auto;
+    margin: 15px auto 0;
     .cells{
       width: 12.5%;
       height: 12.5%;

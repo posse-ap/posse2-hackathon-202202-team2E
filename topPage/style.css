@@ -623,4 +623,29 @@ header .menu-open > span:nth-child(2) {
 .feature-box:hover {
   transform: translateY(-15px) scale(1.03);
 }
+
+footer {
+  background-color: #c9edf8;
+  padding-top: 30px;
+}
+footer h1 {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer h1 a {
+  font-size: 30px;
+  text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+}
+footer .SNS_links {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .SNS_links a {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */
