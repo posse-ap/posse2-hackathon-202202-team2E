@@ -97,7 +97,7 @@ header {
     left: 5%;
     transform: translateX(-300%);
     opacity: 0;
-    transition: transform 0.8s, opacity 0.1s;
+    transition: transform 0.8s, opacity 0.2s;
     z-index: 999;
     & li {
       margin-bottom: 20px;
@@ -370,17 +370,16 @@ header {
 
     &--back {
       transform: rotateY(180deg);
-
       &-1 {
-        background-image: linear-gradient(to right bottom, orange, orangered);
+        background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
       }
 
       &-2 {
-        background-image: linear-gradient(to right bottom, orange, orangered);
+        background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
       }
 
       &-3 {
-        background-image: linear-gradient(to right bottom, orange, orangered);
+        background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
       }
     }
   }
@@ -403,19 +402,19 @@ header {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     &--1 {
-      background-image: linear-gradient(to right bottom, orange, orangered),
+      background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
         url(img/永野芽衣.jpg);
       background-size: contain;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, orange, orangered),
+      background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
         url(img/永野芽衣.jpg);
       background-size: contain;
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, orange, orangered),
+      background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
         url(img/永野芽衣.jpg);
       background-size: contain;
     }
@@ -440,48 +439,35 @@ header {
     white-space: nowrap;
 
     &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(orange, 0.85),
-        rgba(orangered, 0.85)
-      );
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
     }
 
     &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(orange, 0.85),
-        rgba(orangered, 0.85)
-      );
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
     }
 
     &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(orange, 0.85),
-        rgba(orangered, 0.85)
-      );
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
     }
   }
 
   &__details {
     padding: 3rem;
-
-    ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto;
-
-      li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid orange;
-        }
-      }
-    }
   }
 
   // FRONT SIDE STYLING
@@ -506,8 +492,15 @@ header {
   }
 
   &__price-value {
-    font-size: 6rem;
+    white-space: nowrap;
+    font-size: 40px;
     font-weight: 100;
+  }
+  &__price-photo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   //@include respond(tab-port) {
@@ -551,7 +544,7 @@ header {
     }
 
     &__price-value {
-      font-size: 4rem;
+      font-size: 20px;
     }
   }
 }
@@ -621,8 +614,10 @@ header {
 
 
 .section-features{
+  height: 90vh;
+  position: relative;
   margin-top: -200px;
-  padding: 200px 0;
+  padding: 300px 0;
   background-image: linear-gradient(
     to right bottom,
     rgba(35, 209, 240, 0.8),
@@ -630,7 +625,44 @@ header {
     rgba(1, 63, 235, 0.8)
   ),
   url(img/今田美緒.jpg);
-  clip-path: polygon(0% 15vh,0% 100%,100% 100%,100% 0%);
+  clip-path: polygon(0% 18vh,0% 100%,100% 100%,100% 0%);
+  & a{
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($color: #ffffff, $alpha: .6);
+    color: #777;
+    font-weight: 700;
+    padding: 15px 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 100px;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      background-color: rgba($color: #ffffff, $alpha: .6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.5s;
+    }
+    &:hover {
+      transform: translate(-50%, -20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      &::after {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+  }
 }
 
 .row2{
@@ -651,6 +683,77 @@ header {
   transition: transform .2s;
   &:hover{
     transform: translateY(-15px) scale(1.03);
+  }
+  & img{
+    margin-top: 20px;
+    height: 50%;
+  }
+}
+
+.flow{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  margin-top: -100px;
+}
+
+.apeal{
+  width: 100%;
+  font-size: 42px;
+  overflow: hidden;
+  & img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(1, 63, 235, 0.8) 3px 3px 10px;
+    border-radius: 50%;
+  }
+  & .apeal1{
+    display: flex;
+    align-items: center;
+  }
+  & .apeal2{
+    display: flex;
+    text-align: right;
+    align-items: center;
+  }
+  & .apeal3{
+    display: flex;
+    align-items: center;
+  }
+  & .apealChild{
+    &:nth-of-type(1){
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: opacity 2s,transform 2s;
+    }
+    &:nth-of-type(2){
+      opacity: 0;
+      transform: translateX(150px);
+      transition: opacity 2s,transform 2s;
+    }
+    &:nth-of-type(3){
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: opacity 2s,transform 2s;
+    }
+  }
+}
+.apeal{
+  & .xSlide{
+    &:nth-of-type(1){
+      transform: translateX(0);
+      opacity: 1;
+    }
+    &:nth-of-type(2){
+      transform: translateX(0);
+      opacity: 1;
+    }
+    &:nth-of-type(3){
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 
