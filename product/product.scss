@@ -30,6 +30,7 @@
     border: solid black 1px;
     padding: 0;
     margin: 15px auto 0;
+    position: relative;
     .cells{
       width: 12.5%;
       height: 12.5%;
@@ -93,5 +94,29 @@
         border-radius: 50%;
       }
     }
+    #gameSet{
+      position: absolute;
+      top: 37.5%;
+      left: 12.5%;
+      font-size: 25px;
+      width: 75%;
+      height: 25%;
+      text-align: center;
+      color: aqua;
+      font-weight: bold;
+      // background-color: yellow;
+    }
+  }
+  .noClick{
+    pointer-events: none;
+  }
+  #pass{
+    width: 100px;
+    text-align: center;
+    line-height: 2;
+    margin: 0 auto;
+    font-size: 25px;
+    border-radius: 50px;
+    border: solid black 3px;
   }
 }
