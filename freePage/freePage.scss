@@ -1,0 +1,37 @@
+.section-event{
+  margin-bottom: 150px;
+  .paragraph{
+    span {
+      font-size: 30px;
+      background-image: linear-gradient(
+        to right,
+        rgba(15, 232, 240, 0.966),
+        rgba(39, 151, 216, 0.719),
+        rgba(18, 39, 228, 0.719)
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  
+  .events{
+    margin-top: 45px;
+  }
+  #towers {
+    #tokyoTower {
+      width: 50%;
+    }
+    #skytree {
+      width: 70%;
+    }
+  }
+  
+  #cycling{
+    #cycling_1{
+      width: 70%;
+    }
+    #cycling_2{
+      width: 50%;
+    }
+  }
+}
