@@ -1,0 +1,25 @@
+.section-event {
+  margin-bottom: 150px;
+}
+.section-event .paragraph span {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(15, 232, 240, 0.966), rgba(39, 151, 216, 0.719), rgba(18, 39, 228, 0.719));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section-event .events {
+  margin-top: 45px;
+}
+.section-event #towers #tokyoTower {
+  width: 50%;
+}
+.section-event #towers #skytree {
+  width: 70%;
+}
+.section-event #cycling #cycling_1 {
+  width: 70%;
+}
+.section-event #cycling #cycling_2 {
+  width: 50%;
+}
+/*# sourceMappingURL=freePage.css.map */
