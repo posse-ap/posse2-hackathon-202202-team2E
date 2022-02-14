@@ -55,7 +55,7 @@ header {
   justify-content: space-between;
   position: fixed;
   // background-image: url("background-img.jpg");
-  background-color: white;
+  // background-color: white;
   left: 0;
   right: 0;
   top: 0;
@@ -691,6 +691,9 @@ header {
     margin-top: 20px;
     height: 50%;
   }
+  & h3{
+    font-size: 25px;
+  }
 }
 
 .flow{
@@ -800,4 +803,94 @@ footer{
     display: flex;
     justify-content: space-between;
   }
+}
+
+.quiz{
+  height: 70vh;
+  margin-bottom: 50px;
+  & h4{
+    font-size: 40px;
+  }
+}
+.question{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  & .selection{
+    height: auto;
+    background-color: wheat;
+    padding: 50px;
+    margin: 50px 0px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+    transition: transform .5s;
+    cursor: pointer;
+    &:hover{
+      transform: translateY(-30px);
+    }
+  }
+  & .border1{
+    border: solid 5px rgba(15, 139, 240, 0.966);
+  }
+  & .border2{
+    border: solid 5px rgba(240, 49, 15, 0.966);
+  }
+  &__valid{
+    &-effect{
+      position: relative;
+      visibility: hidden;
+      transform: translateY(-50px);
+      transition: transform 0.8s;
+      & .rotate{
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+    }
+    &-move{
+      transform: translateY(-200px);
+      visibility: visible!important;
+    }
+    &-modal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 9;
+      display: inline;
+      font-size: 70px;
+    }
+  }
+  &__invalid{
+    &-effect{
+      position: relative;
+      visibility: hidden;
+      transform: translateY(-100px);
+      transition: transform 0.8s;
+      & .rotate{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+    }
+    &-move{
+      transform: translateY(-450px);
+      visibility: visible!important;
+    }
+    &-modal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 9;
+      display: inline;
+      font-size: 70px;
+    }
+  }
+}
+
+.none{
+  pointer-events: none;
 }

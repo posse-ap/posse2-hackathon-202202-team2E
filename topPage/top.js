@@ -80,4 +80,38 @@ function refresh() {
 }
 recalc();
 
+// document.querySelector('.queston__valid').addEventListener('click',function(){
+//   const answer = document.querySelector('.question__valid-modal')
+//   answer.innerHTML='正解!'
+//   console.log('hello')
+// })
 
+
+function answerDisplay(){
+  const answer = document.querySelector('.question__valid-modal')
+  answer.innerHTML='正解!'
+  const cracker = document.querySelector('.question__valid-effect')
+  cracker.classList.add('question__valid-move')
+  const selection = document.querySelectorAll('.selection')
+  selection.forEach((value)=>{value.classList.add('none')})
+  const border = document.querySelector('.question__valid')
+  border.classList.add('border1')
+  const bgColor = document.querySelector('.question__invalid')
+  bgColor.style.backgroundColor ="gray"
+}
+
+
+function missDisplay(){
+  const miss = document.querySelector('.question__valid-modal')
+  miss.innerHTML="不正解"
+  const cracker =document.querySelector('.question__invalid-effect')
+  cracker.classList.add('question__invalid-move')
+  const selection = document.querySelectorAll('.selection')
+  selection.forEach((value)=>{value.classList.add('none')})
+  const border = document.querySelector('.question__valid')
+  border.classList.add('border1')
+  const border2 = document.querySelector('.question__invalid')
+  border2.classList.add('border2')
+  const bgColor = document.querySelector('.question__invalid')
+  bgColor.style.backgroundColor ="gray"
+}
