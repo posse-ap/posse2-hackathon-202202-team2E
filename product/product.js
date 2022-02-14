@@ -3,6 +3,7 @@ const board = document.getElementById("board");
 let turn = "black";
 let opponent = "white";
 let temp = "";
+let passCounter = 0;
 
 //石を置けるか確認
 function canPut(line, column){
@@ -323,11 +324,46 @@ function turnOverStone(line, column) {
   }
 }
 
+//ゲーム終了
+function gameEnd(){
+  const gameSet = document.createElement("div");
+  gameSet.innerHTML = "game set!";
+  gameSet.id = "gameSet";
+  board.appendChild(gameSet);
+  const pass = document.getElementById("pass");
+  pass.classList.add("noClick");
+
+  document.querySelectorAll(".cells").forEach(element => element.classList.add("noClick"));
+  // let blackScore = 0;
+  // document.querySelectorAll(".blackArea").forEach(element => blackScore++);
+  // let whiteScore = 0;
+  // document.querySelectorAll(".blackArea").forEach(element => whiteScore++);
+
+  let blacks = 0;
+  document.querySelectorAll(".black").forEach(element => blacks++);
+  let whites = 0;
+  document.querySelectorAll(".white").forEach(element => whites++);
+
+  const scoreArea = document.createElement("div");
+  scoreArea.id = "scoreArea";
+  const result = document.createElement("div");
+  result.innerHTML = "それぞれのスコアは…"
+  const blackScore = document.createElement("div");
+  blackScore.innerHTML = "黒：" + blacks;
+  const whiteScore = document.createElement("div");
+  whiteScore.innerHTML = "白：" + whites;
+
+  scoreArea.appendChild(result);
+  scoreArea.appendChild(blackScore);
+  scoreArea.appendChild(whiteScore);
+
+  gameArea.appendChild(scoreArea);
+}
 
 //マスをクリック
 function cellClick(line, column) {
   if(
-    canPut(line, column) === true &&
+    canPut(line, column) &&
     document.getElementById(`cell_${line}_${column}`).className === "cells"
     ){
   putStone(line, column);
@@ -341,8 +377,28 @@ function cellClick(line, column) {
   temp = turn;
   turn = opponent;
   opponent = temp;
+  passCounter = 0;
   }else{
     alert("そこには置けません！");
+  }
+  if(document.querySelectorAll(".cells") === null){
+    gameEnd();
+  }
+}
+
+//パスしたとき
+function pass(){
+  if(turn === "black"){
+    turnShower.innerHTML = "白の番です";
+  }else{
+    turnShower.innerHTML = "黒の番です";
+  }
+  temp = turn;
+  turn = opponent;
+  opponent = temp;
+  passCounter++;
+  if(passCounter === 2){
+    gameEnd();
   }
 }
 
