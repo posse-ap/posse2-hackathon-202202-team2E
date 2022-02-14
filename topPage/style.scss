@@ -1,0 +1,656 @@
+@import "mixin";
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: "Kaisei Decol";
+  // background-image: url("background-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// // プルプルアニメーションつけました
+// img:hover {
+//   animation: yureru-s 2s infinite;
+// }
+// @keyframes yureru-s {
+//   0% {
+//     transform: translate(2px, 0px);
+//   }
+//   5% {
+//     transform: translate(-2px, 0px);
+//   }
+//   10% {
+//     transform: translate(2px, 0px);
+//   }
+//   15% {
+//     transform: translate(-2px, 0px);
+//   }
+//   20% {
+//     transform: translate(2px, 0px);
+//   }
+//   25% {
+//     transform: translate(-2px, 0px);
+//   }
+//   30% {
+//     transform: translate(0px, 0px);
+//   }
+// }
+
+#container {
+  display: none;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  height: 80px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  // background-image: url("background-img.jpg");
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  & h1 {
+    font-size: 30px;
+    text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f007";
+      display: inline-block;
+      transform: translateX(20px);
+      color: rgba(25, 109, 219, 0.8);
+      text-shadow: rgba(245, 208, 0, 0.6) 4px 4px 5px;
+    }
+  }
+  & .mobile-menu-icon {
+    position: relative;
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    z-index: 999;
+    & > span {
+      background-color: black;
+      width: 35px;
+      height: 3px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .menu-content {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateX(-300%);
+    opacity: 0;
+    transition: transform 0.8s, opacity 0.1s;
+    z-index: 999;
+    & li {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    & a {
+      color: white;
+      text-shadow: black 2px 2px 5px;
+      font-weight: 900;
+      font-size: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  & .inview {
+    transform: none;
+    opacity: 1;
+  }
+  & .menu-open {
+    & > span {
+      background-color: #fff;
+      &:nth-child(1) {
+        transition-delay: 70ms;
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transition-delay: 140ms;
+        transform: translateY(0px) rotate(-135deg);
+      }
+    }
+  }
+}
+// background追加しましたby夏蓮
+
+
+
+.black-back {
+  width: 300%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: -200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+.blacky {
+  visibility: visible !important;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  // overflow: hidden;
+  & .pageTop {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 80px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      url(img/今田美緒.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 80vh, 100% 0);
+    &_main {
+      position: absolute;
+      top: 38%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 60px;
+      letter-spacing: 30px;
+      text-transform: uppercase;
+      @include animation($name: leftSlide, $duration: 1s);
+    }
+    @keyframes leftSlide {
+      0% {
+        opacity: 1;
+        transform: translateX(-500px);
+      }
+      80% {
+        transform: translateX(-40%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
+    }
+    &_sub {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      @include animation($name: rightSlide, $duration: 1s);
+    }
+    @keyframes rightSlide {
+      0% {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      80% {
+        transform: translateX(-60%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
+    }
+    & .btn-white {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      color: #777;
+      font-weight: 700;
+      padding: 15px 40px;
+      display: inline-block;
+      white-space: nowrap;
+      border-radius: 100px;
+      transition: all 0.2s;
+      @include animation(
+        $name: bottomSlide,
+        $duration: 1s,
+        $fill-mode: backwards
+      );
+      @keyframes bottomSlide {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -30%);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+      &:hover {
+        transform: translate(-50%, -58%);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        &::after {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgba(15, 232, 240, 0.966),
+    rgba(39, 151, 216, 0.719),
+    rgba(18, 39, 228, 0.719)
+    
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 10px;
+  cursor: pointer;
+  // transition: all 0.2s;
+  // &:hover {
+  //   transform: skewY(10deg) skewX(5deg) scale(1.05);
+  //   text-shadow: 5px 10px 20px rgba($color: #000000, $alpha: 0.2);
+  // }
+}
+.heading-tertiary {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section-about {
+  margin-top: 200px;
+  width: 100%;
+}
+.composition {
+  margin-top: 50px;
+  position: relative;
+  &__photo {
+    width: 50%;
+    box-shadow: 0 15px 40px rgba($color: #000000, $alpha: 0.4);
+    border-radius: 2px;
+    position: absolute;
+    outline-offset: 20px;
+    transition: all 0.2s;
+    height: 500px;
+    object-fit: cover;
+    &--p1 {
+      left: 0;
+      top: -20px;
+    }
+    &--p2 {
+      right: 0;
+      top: 20px;
+    }
+    &--p3 {
+      left: 20%;
+      top: 100px;
+    }
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 25px 40px rgba($color: #000000, $alpha: 0.5);
+      z-index: 20;
+      outline: 15px solid rgba(15, 139, 240, 0.966);
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 500px;
+  width: 30%;
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
+
+    &--front {
+      background-color: wheat;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, orange, orangered);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, orange, orangered);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, orange, orangered);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &--1 {
+      background-image: linear-gradient(to right bottom, orange, orangered),
+        url(img/永野芽衣.jpg);
+      background-size: contain;
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, orange, orangered),
+        url(img/永野芽衣.jpg);
+      background-size: contain;
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, orange, orangered),
+        url(img/永野芽衣.jpg);
+      background-size: contain;
+    }
+  }
+
+  &__heading {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    white-space: nowrap;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(orange, 0.85),
+        rgba(orangered, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(orange, 0.85),
+        rgba(orangered, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(orange, 0.85),
+        rgba(orangered, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid orange;
+        }
+      }
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: wheat;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: wheat;
+    box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}
+.card {
+  &-1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+  }
+  &-2 {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    width: 30%;
+  }
+  &-3 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+  }
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.btn-form {
+  background-color: rgba(238, 91, 5, 0.8);
+  color: #000;
+  font-weight: 700;
+  padding: 15px 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s;
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgba(238, 91, 5, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  &:hover {
+    transform: translate(-50%, -58%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
+
+
+.section-features{
+  margin-top: -200px;
+  padding: 200px 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(35, 209, 240, 0.8),
+    rgba(17, 115, 228, 0.8),
+    rgba(1, 63, 235, 0.8)
+  ),
+  url(img/今田美緒.jpg);
+  clip-path: polygon(0% 15vh,0% 100%,100% 100%,100% 0%);
+}
+
+.row2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-box{
+  background-color: rgba($color: #ffffff, $alpha: .6);
+  font-size: 15px;
+  padding: 25px;
+  margin: 0 20px;
+  width: 25%;
+  height: 300px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px rgba($color: #000000, $alpha: .15);
+  transition: transform .2s;
+  &:hover{
+    transform: translateY(-15px) scale(1.03);
+  }
+}
+
