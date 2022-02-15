@@ -170,7 +170,7 @@ header {
         rgba(17, 115, 228, 0.8),
         rgba(1, 63, 235, 0.8)
       ),
-      url(img/今田美緒.jpg);
+      url(../topPage/img/POSSE②_keyVisual.jpg);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -415,19 +415,19 @@ header {
     border-top-right-radius: 3px;
     &--1 {
       background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
-        url(img/永野芽衣.jpg);
+        url(img/akira_1.jpg);
       background-size: contain;
     }
 
     &--2 {
       background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
-        url(img/永野芽衣.jpg);
+        url(img/karen_1.jpg);
       background-size: contain;
     }
 
     &--3 {
       background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
-        url(img/永野芽衣.jpg);
+        url(img/onokan_1.jpg);
       background-size: contain;
     }
     &--4 {
@@ -665,7 +665,7 @@ header {
     rgba(17, 115, 228, 0.8),
     rgba(1, 63, 235, 0.8)
   ),
-  url(img/今田美緒.jpg);
+  url(../topPage/img/POSSE②_keyVisual.jpg);
   clip-path: polygon(0% 18vh,0% 100%,100% 100%,100% 0%);
   background-size: cover;
   & a{
