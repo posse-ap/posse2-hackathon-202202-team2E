@@ -12,6 +12,7 @@
   <title>topPage</title>
 </head>
 <body>
+  <div id="container">
   <header class="head">
     <h1>POSSE2</h1>
     <button class="mobile-menu-icon" onclick="slider()">
@@ -83,9 +84,9 @@
   <p>次のうち正しいのはどれでしょう？</p>
   <h4>POSSE②は3、4年生の年の離れた先輩がたくさんいるコミュニティである</h4>
   <div class="question">
-  <div class="question__valid selection" onclick="answerDisplay()"><img src="img/iconmonstr-circle-2-240.png" alt=""></div>
+  <div class="question__valid selection" onclick="answerDisplay()"><img src="img/iconmonstr-circle-2-240.png" class="logo"></div>
   <div class="question__valid-modal"></div>
-  <div class="question__invalid selection" onclick="missDisplay()"><img src="img/iconmonstr-x-mark-1-240.png" alt=""></div>
+  <div class="question__invalid selection" onclick="missDisplay()"><img src="img/iconmonstr-x-mark-1-240.png" class="logo"></div>
 </div>
 <div class="question__valid-effect">
   <img src="img/iconmonstr-party-5-240.png" class="question__valid-photo">
@@ -119,9 +120,9 @@
            <div class="card__side card__side--back card__side--back-1">
                 <div class="card__cta">
                     <div class="card__price-box">
-                        <p class="card__price-only">テック局局長</p>
+                        <p class="card__price-only">テック局長</p>
                         <p class="card__price-value">小林哲</p>
-                        <img src="img/永野芽衣.jpg" class="card__price-photo">
+                        <img src="img/永野芽衣.jpg" class="card__price-photo" width="200px" height="200px">
                     </div>
                     <a href="#popup" class="btn btn--white">詳細へ</a>
                 </div>
@@ -147,9 +148,9 @@
             <div class="card__side card__side--back card__side--back-2">
                 <div class="card__cta">
                     <div class="card__price-box">
-                        <p class="card__price-only">カルチャー局局長</p>
+                        <p class="card__price-only">カルチャー局長</p>
                         <p class="card__price-value">金子夏蓮</p>
-                        <img src="img/浜辺美波.jpg" class="card__price-photo">
+                        <img src="img/浜辺美波.jpg" class="card__price-photo" width="200px" height="200px">
                     </div>
                     <a href="#popup" class="btn btn--white">詳細へ</a>
                 </div>
@@ -175,9 +176,9 @@
             <div class="card__side card__side--back card__side--back-3">
                 <div class="card__cta">
                     <div class="card__price-box">
-                        <p class="card__price-only">マーケ局局長</p>
+                        <p class="card__price-only">マーケ局長</p>
                         <p class="card__price-value">小野寛太</p>
-                        <img src="img/広瀬すず.jpg" class="card__price-photo">
+                        <img src="img/広瀬すず.jpg" class="card__price-photo" width="200px" height="200px">
                     </div>
                     <a href="#popup" class="btn btn--white">詳細へ</a>
                 </div>
@@ -187,7 +188,7 @@
 </div>
 <section class="section-features">  
     <h2 class="heading-secondary flow">
-        POSSE②入会までの簡単3ステップ!
+        入会までの簡単3ステップ!
     </h2>          
   <div class="row2">
           <div class="feature-box">
@@ -216,7 +217,7 @@
               <img src="img/iconmonstr-party-6-240.png" alt="">
       </div>
   </div>
-  <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true" class="big-btn-form">GO to form</a>
+  <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true" class="big-btn-form ">GO to form</a>
 </section>
 <!-- <div class="goForm">
   <p class="btn-form">Go to form</p>
@@ -234,6 +235,7 @@
       <a href="https://line.me/R/ti/p/@651htnqp?from=page">line</a>
     </div>
   </footer>
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script src="top.js"></script>
 </body>
