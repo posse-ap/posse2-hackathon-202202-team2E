@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: "M PLUS Rounded 1c";
+  background-image: url(img/background.jpg);
 }
 
 #container {
