@@ -334,10 +334,6 @@ function gameEnd(){
   pass.classList.add("noClick");
 
   document.querySelectorAll(".cells").forEach(element => element.classList.add("noClick"));
-  // let blackScore = 0;
-  // document.querySelectorAll(".blackArea").forEach(element => blackScore++);
-  // let whiteScore = 0;
-  // document.querySelectorAll(".blackArea").forEach(element => whiteScore++);
 
   let blacks = 0;
   document.querySelectorAll(".black").forEach(element => blacks++);
@@ -349,9 +345,9 @@ function gameEnd(){
   const result = document.createElement("div");
   result.innerHTML = "それぞれのスコアは…"
   const blackScore = document.createElement("div");
-  blackScore.innerHTML = "黒：" + blacks;
+  blackScore.innerHTML = "黒：" + blacks + "個";
   const whiteScore = document.createElement("div");
-  whiteScore.innerHTML = "白：" + whites;
+  whiteScore.innerHTML = "白：" + whites + "個";
 
   scoreArea.appendChild(result);
   scoreArea.appendChild(blackScore);

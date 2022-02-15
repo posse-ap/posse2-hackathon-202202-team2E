@@ -115,3 +115,15 @@ function missDisplay(){
   const bgColor = document.querySelector('.question__valid')
   bgColor.style.backgroundColor ="gray"
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => document.querySelector("#formLink_3").classList.toggle("sink")
+  );
+});
+const observer_2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => document.querySelector("#formLink_3").classList.toggle("sink")
+  );
+});
+
+observer.observe(document.querySelector("#formLink_1"));
+observer.observe(document.querySelector("#formLink_2"));
