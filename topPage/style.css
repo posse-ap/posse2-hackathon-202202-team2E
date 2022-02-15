@@ -450,47 +450,23 @@ section h4 {
   border-top-right-radius: 3px;
 }
 .card__picture--1 {
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/akira_1.jpg);
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/akira_1.jpg);
-=======
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/akira_1.jpg);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
   background-size: contain;
 }
 .card__picture--2 {
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/karen_1.jpg);
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/karen_1.jpg);
-=======
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/karen_1.jpg);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
   background-size: contain;
 }
 .card__picture--3 {
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/onokan_1.jpg);
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/onokan_1.jpg);
-=======
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/onokan_1.jpg);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
   background-size: contain;
 }
 .card__picture--4 {
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/永野芽衣.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/永野芽衣.jpg);
-=======
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/tower-pretty.jpg);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(../freePage/img/tower-pretty.jpg);
   background-size: contain;
 }
 .card__picture--5 {
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/永野芽衣.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/永野芽衣.jpg);
-=======
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/おのかん自転車.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(../freePage/img/おのかん自転車.jpg);
   background-size: contain;
 }
 .card__picture--6 {
@@ -499,7 +475,6 @@ section h4 {
 }
 .card__picture--7 {
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/ボドゲこうへい.jpg);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
   background-size: contain;
 }
 .card__heading {
@@ -686,14 +661,8 @@ section h4 {
   position: absolute;
   bottom: 1%;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: white;
-=======
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.6);
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  background-color: white;
   color: #777;
   font-weight: 700;
   padding: 15px 40px;
@@ -754,14 +723,8 @@ section h4 {
 .flow {
   position: absolute;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  color: #ff7b00;
-=======
   transform: translateX(-50%);
-  color: #000;
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  color: #ff7b00;
   white-space: nowrap;
   font-weight: 900;
   margin-top: -100px;
@@ -782,50 +745,26 @@ section h4 {
 }
 .apeal .apeal1 {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px  10px;
-  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-=======
   justify-content: flex-end;
   align-items: center;
   padding: 0px 10px;
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 .apeal .apeal2 {
   display: flex;
   text-align: right;
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px  10px;
-  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-          clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-=======
   align-items: center;
   padding: 0px 10px;
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+          clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
 }
 .apeal .apeal3 {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px  10px;
-  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-=======
   align-items: center;
   padding: 0px 10px;
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 .apeal .apealChild {
   background-color: rgba(245, 222, 179, 0.8);
@@ -1139,6 +1078,7 @@ footer {
   .flow {
     font-size: 20px;
   }
+
   .heading-secondary {
     font-size: 40px;
   }
@@ -1155,14 +1095,11 @@ footer {
     bottom: 0px;
     padding: 5px;
   }
-<<<<<<< HEAD
   .section-features img {
     width: 80px;
     height: 80px;
   }
-=======
 
->>>>>>> a48ca20cc91a16d963c8c4e055ad3c0046adf1e1
   .feature-box {
     height: 200px;
   }
@@ -1204,16 +1141,13 @@ footer {
 }
 
 .scroll {
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
+  transform: translateY(200px);
   opacity: 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .inview2 {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

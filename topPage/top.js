@@ -147,8 +147,8 @@ const observer_2 = new IntersectionObserver((entries) => {
   );
 });
 
-// observer.observe(document.querySelector("#formLink_1"));
-// observer.observe(document.querySelector("#formLink_2"));
+observer.observe(document.querySelector("#formLink_1"));
+observer.observe(document.querySelector("#formLink_2"));
 
 
 
