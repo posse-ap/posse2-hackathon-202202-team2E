@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,UAAU;CACnB",
-    "sources": [
-        "history.scss"
-    ],
-    "names": [],
-    "file": "history.css"
-}
+{"version":3,"sources":["history.scss","history.css"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,cAAA;EACA,gBAAA;ACCF;ADAE;EACE,iDAAA;EACA,gBAAA;ACEJ;ADAE;EACE,eAAA;EACA,yBAAA;EACA,gBAAA;EACA,qBAAA;EACA,2HAAA;EAOA,6BAAA;EACA,kBAAA;EACA,oBAAA;ACJJ;ADME;EACE,gBAAA;EACA,aAAA;EACA,6BAAA;EACA,eAAA;ACJJ;ADKI;EACE,gBAAA;EACA,UAAA;ACHN;ADIM;EACE,WAAA;ACFR;ADOI;EACE,kDAAA;ACLN;ADMM;EACE,UAAA;ACJR;;ADUA;EAGM;IACE,WAAA;ECTN;AACF","file":"history.css"}
