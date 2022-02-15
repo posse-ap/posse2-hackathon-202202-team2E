@@ -887,7 +887,7 @@ header .menu-open > span:nth-child(2) {
 }
 
 .apeal .apealChild {
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.8);
 }
 
 .apeal .apealChild span {
@@ -916,7 +916,7 @@ header .menu-open > span:nth-child(2) {
   transition: opacity 2s,-webkit-transform 2s;
   transition: opacity 2s,transform 2s;
   transition: opacity 2s,transform 2s,-webkit-transform 2s;
-  background-color: rgba(245, 222, 179, 0.6);
+  background-color: rgba(245, 222, 179, 0.4);
 }
 
 .apeal .apealChild:nth-of-type(3) {
@@ -1003,7 +1003,7 @@ footer .SNS_links a {
 .question .selection {
   max-width: 350px;
   height: 350px;
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.5);
   padding: 50px;
   margin: 50px 0px;
   border-radius: 20px;
