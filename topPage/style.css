@@ -408,6 +408,17 @@ header .menu-open > span:nth-child(2) {
 .card__side--back-3 {
   background-image: linear-gradient(to right bottom, rgba(15, 232, 240, 0.966), rgba(39, 151, 216, 0.719), rgba(18, 39, 228, 0.719));
 }
+
+.card__side--back-4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(15, 232, 240, 0.966)), color-stop(rgba(39, 151, 216, 0.719)), to(rgba(18, 39, 228, 0.719)));
+  background-image: linear-gradient(to right bottom, rgba(15, 232, 240, 0.966), rgba(39, 151, 216, 0.719), rgba(18, 39, 228, 0.719));
+}
+
+.card__side--back-5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(15, 232, 240, 0.966)), color-stop(rgba(39, 151, 216, 0.719)), to(rgba(18, 39, 228, 0.719)));
+  background-image: linear-gradient(to right bottom, rgba(15, 232, 240, 0.966), rgba(39, 151, 216, 0.719), rgba(18, 39, 228, 0.719));
+}
+
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
@@ -435,6 +446,19 @@ header .menu-open > span:nth-child(2) {
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/onokan_1.jpg);
   background-size: contain;
 }
+
+.card__picture--4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-size: contain;
+}
+
+.card__picture--5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-size: contain;
+}
+
 .card__heading {
   font-size: 25px;
   font-weight: 300;
@@ -461,6 +485,15 @@ header .menu-open > span:nth-child(2) {
 .card__heading-span--3 {
   background-color: rgba(245, 222, 179, 0.8);
 }
+
+.card__heading-span--4 {
+  background-color: rgba(245, 222, 179, 0.8);
+}
+
+.card__heading-span--5 {
+  background-color: rgba(245, 222, 179, 0.8);
+}
+
 .card__details {
   padding: 3rem;
 }
@@ -1026,7 +1059,8 @@ footer {
     font-size: 20px;
   }
 }
-@media (max-width: 536px) {
+
+@media (max-width: 600px) {
   .main .pageTop_main {
     font-size: 40px;
   }

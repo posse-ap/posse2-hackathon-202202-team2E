@@ -13,6 +13,7 @@ body {
   // background-image: url("background-img.jpg");
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 // // プルプルアニメーションつけました
@@ -386,6 +387,12 @@ header {
       &-3 {
         background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
       }
+      &-4 {
+        background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
+      }
+      &-5 {
+        background-image: linear-gradient(to right bottom,rgba(15, 232, 240, 0.966),rgba(39, 151, 216, 0.719),rgba(18, 39, 228, 0.719));
+      }
     }
   }
 
@@ -421,6 +428,16 @@ header {
     &--3 {
       background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
         url(img/onokan_1.jpg);
+      background-size: contain;
+    }
+    &--4 {
+      background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
+        url(img/永野芽衣.jpg);
+      background-size: contain;
+    }
+    &--5 {
+      background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8),rgba(1, 63, 235, 0.8)),
+        url(img/永野芽衣.jpg);
       background-size: contain;
     }
   }
@@ -462,6 +479,22 @@ header {
     }
 
     &--3 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+    &--4 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+    &--5 {
       background-color: rgba(245, 222, 179,0.8);
       // background-image: linear-gradient(
       //   to right bottom,
@@ -749,7 +782,6 @@ header {
     rgba(15, 232, 240, 0.966),
     rgba(39, 151, 216, 0.719),
     rgba(18, 39, 228, 0.719)
-    
   );
   -webkit-background-clip: text;
   color: transparent;
@@ -921,7 +953,7 @@ footer{
 @media (max-width: 912px) {
   @import "_912Down.scss";
 }
-@media (max-width: 536px) {
+@media (max-width: 600px) {
   @import "_500Down.scss";
 }
 
