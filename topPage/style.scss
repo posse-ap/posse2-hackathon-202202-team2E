@@ -593,9 +593,9 @@ header {
   white-space: nowrap;
   border-radius: 100px;
   position: fixed;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 3%;
+  right: 0;
+  cursor: pointer;
   transition: all 0.2s;
   &::after {
     content: "";
@@ -611,7 +611,7 @@ header {
     transition: all 0.5s;
   }
   &:hover {
-    transform: translate(-50%, -58%);
+    transform: translateX(-10px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     &::after {
       transform: scale(1.5);
@@ -741,7 +741,7 @@ header {
     padding: 0px  10px;
   }
   & .apealChild{
-    background-color: wheat;
+    background-color: rgba(245, 222, 179,0.8);
     & span{
       font-size:60px;
       background-image: linear-gradient(
@@ -763,7 +763,7 @@ header {
       opacity: 0;
       transform: translateX(150px);
       transition: opacity 2s,transform 2s;
-      background-color: rgba(245, 222, 179,0.6);
+      background-color: rgba(245, 222, 179,0.4);
     }
     &:nth-of-type(3){
       opacity: 0;
@@ -830,7 +830,7 @@ footer{
   & .selection{
     max-width: 350px;
     height: 350px;
-    background-color: wheat;
+    background-color: rgba(245, 222, 179,0.5);
     padding: 50px;
     margin: 50px 0px;
     border-radius: 20px;
@@ -841,10 +841,10 @@ footer{
       transform: translateY(-30px);
     }
   }
-  & .border1{
+  & .border2{
     border: solid 5px rgba(15, 139, 240, 0.966);
   }
-  & .border2{
+  & .border1{
     border: solid 5px rgba(240, 49, 15, 0.966);
   }
   &__valid{
@@ -928,3 +928,14 @@ footer{
 @media only screen and (max-width: 912px), only screen and (hover: none){
   @import "_noneHover.scss";
 } 
+
+
+
+.timer{
+  font-size: 15px;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  color: orange;
+  font-weight: 900;
+}

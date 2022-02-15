@@ -96,7 +96,9 @@ function answerDisplay(){
   selection.forEach((value)=>{value.classList.add('none')})
   const border = document.querySelector('.question__valid')
   border.classList.add('border1')
-  const bgColor = document.querySelector('.question__invalid')
+  const border2 = document.querySelector('.question__invalid')
+  border2.classList.add('border2')
+  const bgColor = document.querySelector('.question__valid')
   bgColor.style.backgroundColor ="gray"
 }
 
@@ -110,8 +112,6 @@ function missDisplay(){
   selection.forEach((value)=>{value.classList.add('none')})
   const border = document.querySelector('.question__valid')
   border.classList.add('border1')
-  const border2 = document.querySelector('.question__invalid')
-  border2.classList.add('border2')
-  const bgColor = document.querySelector('.question__invalid')
+  const bgColor = document.querySelector('.question__valid')
   bgColor.style.backgroundColor ="gray"
 }

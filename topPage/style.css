@@ -568,9 +568,10 @@ header .menu-open > span:nth-child(2) {
   white-space: nowrap;
   border-radius: 100px;
   position: fixed;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 3%;
+  right: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .btn-form::after {
@@ -587,8 +588,10 @@ header .menu-open > span:nth-child(2) {
   transition: all 0.5s;
 }
 .btn-form:hover {
-  transform: translate(-50%, -58%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .btn-form:hover::after {
   transform: scale(1.5);
@@ -711,7 +714,7 @@ header .menu-open > span:nth-child(2) {
   padding: 0px 10px;
 }
 .apeal .apealChild {
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.8);
 }
 .apeal .apealChild span {
   font-size: 60px;
@@ -726,9 +729,13 @@ header .menu-open > span:nth-child(2) {
 }
 .apeal .apealChild:nth-of-type(2) {
   opacity: 0;
-  transform: translateX(150px);
-  transition: opacity 2s, transform 2s;
-  background-color: rgba(245, 222, 179, 0.6);
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition: opacity 2s,-webkit-transform 2s;
+  transition: opacity 2s,-webkit-transform 2s;
+  transition: opacity 2s,transform 2s;
+  transition: opacity 2s,transform 2s,-webkit-transform 2s;
+  background-color: rgba(245, 222, 179, 0.4);
 }
 .apeal .apealChild:nth-of-type(3) {
   opacity: 0;
@@ -792,7 +799,7 @@ footer .SNS_links a {
 .question .selection {
   max-width: 350px;
   height: 350px;
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.5);
   padding: 50px;
   margin: 50px 0px;
   border-radius: 20px;
@@ -803,10 +810,12 @@ footer .SNS_links a {
 .question .selection:hover {
   transform: translateY(-30px);
 }
-.question .border1 {
+
+.question .border2 {
   border: solid 5px rgba(15, 139, 240, 0.966);
 }
-.question .border2 {
+
+.question .border1 {
   border: solid 5px rgba(240, 49, 15, 0.966);
 }
 .question__valid-effect {
@@ -1154,5 +1163,14 @@ footer {
   .feature-box:nth-of-type(1) {
     margin-top: -50px;
   }
+}
+
+.timer {
+  font-size: 15px;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  color: orange;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
