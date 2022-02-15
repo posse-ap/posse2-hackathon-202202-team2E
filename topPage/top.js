@@ -86,6 +86,28 @@ recalc();
 //   console.log('hello')
 // })
 
+// document.addEventListener('DOMContentLoaded', function () {
+
+//   const els = document.querySelectorAll('.animate-title');
+//   const cb = function (entries, observer) {
+//       entries.forEach(entry => {
+//           if (entry.isIntersecting) {
+//               const ta = new TextAnimation(entry.target);
+//               ta.animate();
+//               observer.unobserve(entry.target);
+//           } else {
+//           }
+//       });
+//   };
+//   const options = {
+//       root: null,
+//       rootMargin: "-100px",
+//       threshold: 0
+//   };
+//   const io = new IntersectionObserver(cb, options);
+//   els.forEach(el => io.observe(el));
+// });
+
 
 function answerDisplay(){
   const answer = document.querySelector('.question__valid-modal')
@@ -125,5 +147,28 @@ const observer_2 = new IntersectionObserver((entries) => {
   );
 });
 
-observer.observe(document.querySelector("#formLink_1"));
-observer.observe(document.querySelector("#formLink_2"));
+// observer.observe(document.querySelector("#formLink_1"));
+// observer.observe(document.querySelector("#formLink_2"));
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const els2 = document.querySelectorAll(".scroll");
+  const cb2 = function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("inview2");
+        observer.unobserve(entry.target);
+        console.log(entry.target);
+      } else {
+      }
+    });
+  };
+  const options2 = {
+    root: null,
+    rootMargin: "-100px",
+    threshold: 0,
+  };
+  const io2 = new IntersectionObserver(cb2, options2);
+  els2.forEach((el) => io2.observe(el));
+});

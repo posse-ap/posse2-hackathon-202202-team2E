@@ -3,6 +3,7 @@
   width: 100%;
   margin-bottom: 150px;
 }
+
 #gameArea .productTitle {
   text-align: center;
   margin-top: 50px;
@@ -11,34 +12,43 @@
   font-size: 35px;
   text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
 }
+
 #gameArea p {
   display: block;
   width: 50%;
   max-width: 450px;
   margin: 0 auto;
 }
+
 #gameArea #turnShower {
   font-size: 20px;
 }
+
 #gameArea #board {
   width: 50vw;
   max-width: 450px;
   max-height: 450px;
   height: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: solid black 1px;
   padding: 0;
   margin: 15px auto 0;
   position: relative;
 }
+
 #gameArea #board .cells {
   width: 12.5%;
   height: 12.5%;
   background-color: green;
   border: solid black 1px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 #gameArea #board .cells .black {
   width: 90%;
   height: 90%;
@@ -46,6 +56,7 @@
   background-color: black;
   border-radius: 50%;
 }
+
 #gameArea #board .cells .white {
   width: 90%;
   height: 90%;
@@ -53,13 +64,16 @@
   background-color: white;
   border-radius: 50%;
 }
+
 #gameArea #board .blackArea {
   width: 12.5%;
   height: 12.5%;
   background-color: green;
   border: solid black 1px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 #gameArea #board .blackArea .black {
   width: 90%;
   height: 90%;
@@ -67,6 +81,7 @@
   background-color: black;
   border-radius: 50%;
 }
+
 #gameArea #board .blackArea .white {
   width: 90%;
   height: 90%;
@@ -74,13 +89,16 @@
   background-color: white;
   border-radius: 50%;
 }
+
 #gameArea #board .whiteArea {
   width: 12.5%;
   height: 12.5%;
   background-color: green;
   border: solid black 1px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 #gameArea #board .whiteArea .black {
   width: 90%;
   height: 90%;
@@ -88,6 +106,7 @@
   background-color: black;
   border-radius: 50%;
 }
+
 #gameArea #board .whiteArea .white {
   width: 90%;
   height: 90%;
@@ -95,6 +114,7 @@
   background-color: white;
   border-radius: 50%;
 }
+
 #gameArea #board #gameSet {
   position: absolute;
   top: 37.5%;
@@ -106,9 +126,11 @@
   color: aqua;
   font-weight: bold;
 }
+
 #gameArea .noClick {
   pointer-events: none;
 }
+
 #gameArea #pass {
   width: 100px;
   text-align: center;
@@ -118,6 +140,7 @@
   border-radius: 50px;
   border: solid black 3px;
 }
+
 #gameArea #scoreArea {
   width: 50%;
   margin: 0 auto;

@@ -186,7 +186,7 @@ img {
   // transform: translate(-50%, -50%);
   color: #2b3cb1;
   opacity: 0;
-  font-size: 30px;
+  font-size: 30px!important;
 
   &.inview2 {
     opacity: 1;
