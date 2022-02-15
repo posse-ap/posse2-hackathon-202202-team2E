@@ -11,6 +11,9 @@ footer{
 }
 
 .apeal{
+  & span{
+    font-size: 35px;
+  }
   font-size: 25px;
   & img {
     min-width: 350px;
