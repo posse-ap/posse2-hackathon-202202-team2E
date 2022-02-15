@@ -1,5 +1,5 @@
 @import "mixin";
-
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=M+PLUS+Rounded+1c:wght@300&display=swap');
 
 li {
   list-style: none;
@@ -9,10 +9,10 @@ a {
   color: black;
 }
 body {
-  font-family: "Kaisei Decol";
   // background-image: url("background-img.jpg");
   background-size: cover;
   background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c";
   background-image: url(img/background.jpg);
 }
 
@@ -62,6 +62,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  font-family: "Kaisei Decol";
   & h1 {
     font-size: 30px;
     text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
@@ -163,6 +164,7 @@ footer{
   margin: 0 auto;
   // overflow: hidden;
   & .pageTop {
+    font-family: "Kaisei Decol";
     position: relative;
     width: 100%;
     height: 90vh;
@@ -283,6 +285,7 @@ footer{
 }
 
 .heading-secondary {
+  font-family: "Kaisei Decol";
   padding-left: 20px;
   font-size: 35px;
   text-transform: uppercase;
@@ -491,7 +494,7 @@ section{
         rgba(17, 115, 228, 0.8),
         rgba(1, 63, 235, 0.8)
       ),
-        url(img/永野芽衣.jpg);
+        url(../freePage/img/tower-pretty.jpg);
       background-size: contain;
     }
     &--5 {
@@ -501,7 +504,27 @@ section{
         rgba(17, 115, 228, 0.8),
         rgba(1, 63, 235, 0.8)
       ),
-        url(img/永野芽衣.jpg);
+        url(../freePage/img/おのかん自転車.jpg);
+      background-size: contain;
+    }
+    &--6 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+        url(../freePage/img/はつモーで.jpg);
+      background-size: contain;
+    }
+    &--7 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+        url(../freePage/img/ボドゲこうへい.jpg);
       background-size: contain;
     }
   }
@@ -733,6 +756,7 @@ section{
   clip-path: polygon(0% 18vh,0% 100%,100% 100%,100% 0%);
   background-size: cover;
   & a{
+    font-family: "Kaisei Decol";
     text-align: center;
     font-size: 20px;
     width: 50%;
@@ -841,6 +865,7 @@ section{
   & .apealChild{
     background-color: rgba(245, 222, 179,0.8);
     & span{
+      font-family: "Kaisei Decol";
       font-size:60px;
       background-image: linear-gradient(
         to right bottom,
@@ -1004,6 +1029,7 @@ footer{
 }
 
 footer{
+  font-family: "Kaisei Decol";
   background-color: rgba(68, 80, 148, 0.8);
   font-weight: 900;
   font-size: 20px;
