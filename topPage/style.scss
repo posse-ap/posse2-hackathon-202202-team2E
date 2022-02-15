@@ -284,7 +284,7 @@ footer{
 
 .heading-secondary {
   padding-left: 20px;
-  font-size: 35px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -455,9 +455,9 @@ section{
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(35, 209, 240, 0.8),
-        rgba(17, 115, 228, 0.8),
-        rgba(1, 63, 235, 0.8)
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
       ),
         url(img/akira_1.jpg);
       background-size: contain;
@@ -466,9 +466,9 @@ section{
     &--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(35, 209, 240, 0.8),
-        rgba(17, 115, 228, 0.8),
-        rgba(1, 63, 235, 0.8)
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
       ),
         url(img/karen_1.jpg);
       background-size: contain;
@@ -477,9 +477,9 @@ section{
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(35, 209, 240, 0.8),
-        rgba(17, 115, 228, 0.8),
-        rgba(1, 63, 235, 0.8)
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
       ),
         url(img/onokan_1.jpg);
       background-size: contain;
@@ -487,9 +487,9 @@ section{
     &--4 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(35, 209, 240, 0.8),
-        rgba(17, 115, 228, 0.8),
-        rgba(1, 63, 235, 0.8)
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
       ),
         url(img/永野芽衣.jpg);
       background-size: contain;
@@ -497,9 +497,9 @@ section{
     &--5 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(35, 209, 240, 0.8),
-        rgba(17, 115, 228, 0.8),
-        rgba(1, 63, 235, 0.8)
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
       ),
         url(img/永野芽衣.jpg);
       background-size: contain;
@@ -740,7 +740,7 @@ section{
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba($color: #ffffff, $alpha: .6);
+    background-color: rgba($color: #ffffff, $alpha: 1);
     color: #777;
     font-weight: 700;
     padding: 15px 40px;
@@ -753,7 +753,7 @@ section{
       height: 100%;
       width: 100%;
       border-radius: 100px;
-      background-color: rgba($color: #ffffff, $alpha: .6);
+      background-color: rgba($color: #ffffff, $alpha: 1);
       position: absolute;
       top: 0;
       left: 0;
@@ -803,7 +803,7 @@ section{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #000;
+  color: rgb(255, 123, 0);
   white-space: nowrap;
   font-weight: 900;
   margin-top: -100px;
@@ -826,20 +826,24 @@ section{
     justify-content: flex-end;
     align-items: center;
     padding:0px  10px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
   }
   & .apeal2{
     display: flex;
     text-align: right;
     align-items: center;
     padding:0px  10px;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
   }
   & .apeal3{
     display: flex;
     align-items: center;
     padding: 0px  10px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
   }
   & .apealChild{
     background-color: rgba(245, 222, 179,0.8);
+    padding: 50px;
     & span{
       font-size:60px;
       background-image: linear-gradient(
@@ -1040,4 +1044,18 @@ footer{
 
 .sink{
   display: none;
+}
+
+
+
+
+.scroll{
+  transform: translateY(200px);
+  opacity: 0;
+  transition:  all 1s;
+}
+
+.inview2{
+  transform: none;
+  opacity: 1;
 }

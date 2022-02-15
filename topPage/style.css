@@ -387,7 +387,7 @@ footer {
 
 .heading-secondary {
   padding-left: 20px;
-  font-size: 35px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -553,32 +553,32 @@ section h4 {
 }
 
 .card__picture--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/akira_1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/akira_1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/akira_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/akira_1.jpg);
   background-size: contain;
 }
 
 .card__picture--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/karen_1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/karen_1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/karen_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/karen_1.jpg);
   background-size: contain;
 }
 
 .card__picture--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/onokan_1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/onokan_1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/onokan_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/onokan_1.jpg);
   background-size: contain;
 }
 
 .card__picture--4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/永野芽衣.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/永野芽衣.jpg);
   background-size: contain;
 }
 
 .card__picture--5 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.8)), color-stop(rgba(17, 115, 228, 0.8)), to(rgba(1, 63, 235, 0.8))), url(img/永野芽衣.jpg);
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(35, 209, 240, 0.6)), color-stop(rgba(17, 115, 228, 0.6)), to(rgba(1, 63, 235, 0.6))), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.6), rgba(17, 115, 228, 0.6), rgba(1, 63, 235, 0.6)), url(img/永野芽衣.jpg);
   background-size: contain;
 }
 
@@ -798,7 +798,7 @@ section h4 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: white;
   color: #777;
   font-weight: 700;
   padding: 15px 40px;
@@ -813,7 +813,7 @@ section h4 {
   height: 100%;
   width: 100%;
   border-radius: 100px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -879,7 +879,7 @@ section h4 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #000;
+  color: #ff7b00;
   white-space: nowrap;
   font-weight: 900;
   margin-top: -100px;
@@ -912,6 +912,8 @@ section h4 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px  10px;
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 
 .apeal .apeal2 {
@@ -923,6 +925,8 @@ section h4 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px  10px;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+          clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
 }
 
 .apeal .apeal3 {
@@ -933,10 +937,13 @@ section h4 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px  10px;
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 
 .apeal .apealChild {
   background-color: rgba(245, 222, 179, 0.8);
+  padding: 50px;
 }
 
 .apeal .apealChild span {
@@ -1310,6 +1317,9 @@ footer {
   .flow {
     font-size: 20px;
   }
+  .heading-secondary {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1322,6 +1332,10 @@ footer {
   .section-features a {
     bottom: 0px;
     padding: 5px;
+  }
+  .section-features img {
+    width: 80px;
+    height: 80px;
   }
   .feature-box {
     height: 200px;
@@ -1362,5 +1376,19 @@ footer {
 
 .sink {
   display: none;
+}
+
+.scroll {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.inview2 {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
