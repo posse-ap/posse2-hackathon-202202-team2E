@@ -22,10 +22,10 @@ function slider() {
 }
 
 
-$(function(){
-  setTimeout(function(){
-  $('.firstAnimation').fadeOut();
-  },2900);});
+// $(function(){
+//   setTimeout(function(){
+//   $('.firstAnimation').fadeOut();
+//   },2900);});
 
 
 
