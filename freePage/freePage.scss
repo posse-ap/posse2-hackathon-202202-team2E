@@ -235,12 +235,20 @@ footer{
 }
 
 @media(max-width:912px){
+  .section-features{
+    & a{
+      position: absolute;
+      bottom: 0%;
+    }
+  }
     footer{
       width: 95%
     }
 }
 
-
+footer{
+  width: 90%;
+}
 .section-features{
   & a{
     text-align: center;

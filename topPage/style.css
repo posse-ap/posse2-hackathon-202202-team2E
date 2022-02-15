@@ -152,7 +152,12 @@ header .menu-open > span:nth-child(2) {
   visibility: visible !important;
 }
 
+footer {
+  width: 100% !important;
+}
+
 .main {
+  width: 100% !important;
   width: 90%;
   margin: 0 auto;
 }
@@ -1325,109 +1330,6 @@ footer {
   }
   .apeal .apeal3 {
     display: block;
-  }
-  .question .logo {
-    min-width: 150px;
-    height: 150px;
-  }
-  .question .selection {
-    min-width: 200px;
-    height: 200px;
-    padding: 25px;
-  }
-  .question .selection:hover {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  .question__valid-effect {
-    position: relative;
-    visibility: hidden;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transition: -webkit-transform 0.8s;
-    transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-    transition: transform 0.8s, -webkit-transform 0.8s;
-  }
-  .question__valid-effect .rotate {
-    -webkit-transform: rotate(-90deg) scale(0.6);
-            transform: rotate(-90deg) scale(0.6);
-    position: absolute;
-    top: 0%;
-    right: 0%;
-  }
-  .question__valid-move {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
-    visibility: visible !important;
-  }
-  .question__valid-modal {
-    font-size: 40px;
-  }
-  .question__valid-photo {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .question__invalid-effect .rotate {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-  }
-  .question__invalid-move {
-    -webkit-transform: translateY(-450px);
-            transform: translateY(-450px);
-  }
-  .question__invalid-modal {
-    font-size: 40px;
-  }
-  .question__invalid-photo {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .card-1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-  }
-  .card-2 {
-    position: absolute;
-    top: 150%;
-    left: 0%;
-    width: 100%;
-  }
-  .card-3 {
-    position: absolute;
-    top: 300%;
-    left: 0%;
-    width: 100%;
-  }
-  .row {
-    margin-bottom: 1000px;
-  }
-  .row .card__price-only {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-    white-space: nowrap;
-    font-size: 15px;
-  }
-  .row .card__price-photo {
-    display: none;
-  }
-  .row2 {
-    display: block;
-  }
-  .section-features {
-    margin-top: 1730px;
-    padding-bottom: 600px;
-  }
-  .feature-box {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .feature-box:nth-of-type(1) {
-    margin-top: -50px;
   }
 }
 
