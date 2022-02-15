@@ -3,48 +3,37 @@
   margin: 0 auto;
   margin-top: 45px;
 }
-
 .history h3 {
   text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
   margin-top: 55px;
 }
-
 .history h1 {
+  font-family: "Kaisei Decol";
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 232, 240, 0.966)), color-stop(rgba(39, 151, 216, 0.719)), to(rgba(18, 39, 228, 0.719)));
   background-image: linear-gradient(to right, rgba(15, 232, 240, 0.966), rgba(39, 151, 216, 0.719), rgba(18, 39, 228, 0.719));
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 10px;
 }
-
 .history .month {
   margin-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .history .month .event {
   margin-top: 20px;
   width: 45%;
 }
-
 .history .month .event img {
   width: 100%;
 }
-
 .history #information a {
   border-bottom: rgba(15, 232, 240, 0.966) solid 3px;
 }
-
 .history #information a:hover {
   color: red;
 }
@@ -54,7 +43,6 @@
     width: 100%;
   }
 }
-
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -66,7 +54,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-
 .cover-slide::after {
   content: "";
   position: absolute;
@@ -78,7 +65,6 @@ img {
   background-color: #eaebe6;
   opacity: 0;
 }
-
 .cover-slide.inview::after {
   opacity: 1;
   -webkit-animation-name: kf-cover-slide;
@@ -99,71 +85,50 @@ img {
 
 @-webkit-keyframes kf-cover-slide {
   0% {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform-origin: left;
+    transform: scaleX(0);
   }
   50% {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform-origin: left;
+    transform: scaleX(1);
   }
   50.1% {
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform-origin: right;
+    transform: scaleX(1);
   }
   100% {
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform-origin: right;
+    transform: scaleX(0);
   }
 }
 
 @keyframes kf-cover-slide {
   0% {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform-origin: left;
+    transform: scaleX(0);
   }
   50% {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform-origin: left;
+    transform: scaleX(1);
   }
   50.1% {
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform-origin: right;
+    transform: scaleX(1);
   }
   100% {
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform-origin: right;
+    transform: scaleX(0);
   }
 }
-
 .img-zoom {
   -o-object-fit: cover;
      object-fit: cover;
   height: 500px;
   opacity: 0;
 }
-
 .inview .img-zoom {
   opacity: 1;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-animation-name: kf-img-show;
           animation-name: kf-img-show;
   -webkit-animation-duration: 1.6s;
@@ -179,10 +144,8 @@ img {
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
 }
-
 .inview .img-zoom:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @-webkit-keyframes kf-img-show {
@@ -194,8 +157,7 @@ img {
   }
   50.1% {
     opacity: 1;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
     opacity: 1;
@@ -211,14 +173,12 @@ img {
   }
   50.1% {
     opacity: 1;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
     opacity: 1;
   }
 }
-
 .hover-darken::before {
   content: "";
   position: absolute;
@@ -227,7 +187,6 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   pointer-events: none;
   -webkit-animation-name: kf-img-show;
@@ -245,7 +204,6 @@ img {
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
 }
-
 .hover-darken:hover::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -260,17 +218,14 @@ img {
   opacity: 0;
   font-size: 30px;
 }
-
 .animate-title.inview2,
 .tween-animate-title.inview2 {
   opacity: 1;
 }
-
 .animate-title.inview2 .char,
 .tween-animate-title.inview2 .char {
   display: inline-block;
 }
-
 .animate-title .char,
 .tween-animate-title .char {
   opacity: 0;
@@ -292,152 +247,122 @@ img {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-
 .animate-title.inview2 .char:nth-child(1) {
   -webkit-animation-delay: 0.06s;
           animation-delay: 0.06s;
 }
-
 .animate-title.inview2 .char:nth-child(2) {
   -webkit-animation-delay: 0.12s;
           animation-delay: 0.12s;
 }
-
 .animate-title.inview2 .char:nth-child(3) {
   -webkit-animation-delay: 0.18s;
           animation-delay: 0.18s;
 }
-
 .animate-title.inview2 .char:nth-child(4) {
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
 }
-
 .animate-title.inview2 .char:nth-child(5) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-
 .animate-title.inview2 .char:nth-child(6) {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-
 .animate-title.inview2 .char:nth-child(7) {
   -webkit-animation-delay: 0.42s;
           animation-delay: 0.42s;
 }
-
 .animate-title.inview2 .char:nth-child(8) {
   -webkit-animation-delay: 0.48s;
           animation-delay: 0.48s;
 }
-
 .animate-title.inview2 .char:nth-child(9) {
   -webkit-animation-delay: 0.54s;
           animation-delay: 0.54s;
 }
-
 .animate-title.inview2 .char:nth-child(10) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-
 .animate-title.inview2 .char:nth-child(11) {
   -webkit-animation-delay: 0.66s;
           animation-delay: 0.66s;
 }
-
 .animate-title.inview2 .char:nth-child(12) {
   -webkit-animation-delay: 0.72s;
           animation-delay: 0.72s;
 }
-
 .animate-title.inview2 .char:nth-child(13) {
   -webkit-animation-delay: 0.78s;
           animation-delay: 0.78s;
 }
-
 .animate-title.inview2 .char:nth-child(14) {
   -webkit-animation-delay: 0.84s;
           animation-delay: 0.84s;
 }
-
 .animate-title.inview2 .char:nth-child(15) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
-
 .animate-title.inview2 .char:nth-child(16) {
   -webkit-animation-delay: 0.96s;
           animation-delay: 0.96s;
 }
-
 .animate-title.inview2 .char:nth-child(17) {
   -webkit-animation-delay: 1.02s;
           animation-delay: 1.02s;
 }
-
 .animate-title.inview2 .char:nth-child(18) {
   -webkit-animation-delay: 1.08s;
           animation-delay: 1.08s;
 }
-
 .animate-title.inview2 .char:nth-child(19) {
   -webkit-animation-delay: 1.14s;
           animation-delay: 1.14s;
 }
-
 .animate-title.inview2 .char:nth-child(20) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-
 .animate-title.inview2 .char:nth-child(21) {
   -webkit-animation-delay: 1.26s;
           animation-delay: 1.26s;
 }
-
 .animate-title.inview2 .char:nth-child(22) {
   -webkit-animation-delay: 1.32s;
           animation-delay: 1.32s;
 }
-
 .animate-title.inview2 .char:nth-child(23) {
   -webkit-animation-delay: 1.38s;
           animation-delay: 1.38s;
 }
-
 .animate-title.inview2 .char:nth-child(24) {
   -webkit-animation-delay: 1.44s;
           animation-delay: 1.44s;
 }
-
 .animate-title.inview2 .char:nth-child(25) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
-
 .animate-title.inview2 .char:nth-child(26) {
   -webkit-animation-delay: 1.56s;
           animation-delay: 1.56s;
 }
-
 .animate-title.inview2 .char:nth-child(27) {
   -webkit-animation-delay: 1.62s;
           animation-delay: 1.62s;
 }
-
 .animate-title.inview2 .char:nth-child(28) {
   -webkit-animation-delay: 1.68s;
           animation-delay: 1.68s;
 }
-
 .animate-title.inview2 .char:nth-child(29) {
   -webkit-animation-delay: 1.74s;
           animation-delay: 1.74s;
 }
-
 .animate-title.inview2 .char:nth-child(30) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
@@ -446,26 +371,22 @@ img {
 @-webkit-keyframes kf-animate-chars {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes kf-animate-chars {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 /*# sourceMappingURL=history.css.map */

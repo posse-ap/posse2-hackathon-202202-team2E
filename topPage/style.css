@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=M+PLUS+Rounded+1c:wght@300&display=swap");
 li {
   list-style: none;
 }
@@ -9,9 +10,9 @@ a {
 }
 
 body {
-  font-family: "Kaisei Decol";
   background-size: cover;
   background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c";
 }
 
 #container {
@@ -31,6 +32,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  font-family: "Kaisei Decol";
 }
 header h1 {
   font-size: 30px;
@@ -129,6 +131,7 @@ footer {
   margin: 0 auto;
 }
 .main .pageTop {
+  font-family: "Kaisei Decol";
   position: relative;
   width: 100%;
   height: 90vh;
@@ -314,6 +317,7 @@ footer {
 }
 
 .heading-secondary {
+  font-family: "Kaisei Decol";
   padding-left: 20px;
   font-size: 35px;
   text-transform: uppercase;
@@ -329,7 +333,6 @@ footer {
 section p {
   padding-left: 20px;
 }
-
 section h4 {
   padding-left: 20px;
 }
@@ -458,11 +461,19 @@ section h4 {
   background-size: contain;
 }
 .card__picture--4 {
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/tower-pretty.jpg);
   background-size: contain;
 }
 .card__picture--5 {
-  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(img/永野芽衣.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/おのかん自転車.jpg);
+  background-size: contain;
+}
+.card__picture--6 {
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/はつモーで.jpg);
+  background-size: contain;
+}
+.card__picture--7 {
+  background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8)), url(../freePage/img/ボドゲこうへい.jpg);
   background-size: contain;
 }
 .card__heading {
@@ -642,6 +653,7 @@ section h4 {
   background-size: cover;
 }
 .section-features a {
+  font-family: "Kaisei Decol";
   text-align: center;
   font-size: 20px;
   width: 50%;
@@ -732,13 +744,9 @@ section h4 {
 }
 .apeal .apeal1 {
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px  10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10px;
 }
 .apeal .apeal2 {
   display: flex;
@@ -755,6 +763,7 @@ section h4 {
   background-color: rgba(245, 222, 179, 0.8);
 }
 .apeal .apealChild span {
+  font-family: "Kaisei Decol";
   font-size: 60px;
   background-image: linear-gradient(to right bottom, rgba(35, 209, 240, 0.8), rgba(17, 115, 228, 0.8), rgba(1, 63, 235, 0.8));
   -webkit-background-clip: text;
@@ -905,6 +914,7 @@ footer .SNS_links a {
 }
 
 footer {
+  font-family: "Kaisei Decol";
   background-color: rgba(68, 80, 148, 0.8);
   font-weight: 900;
   font-size: 20px;
