@@ -695,10 +695,9 @@ header .menu-open > span:nth-child(2) {
   white-space: nowrap;
   border-radius: 100px;
   position: fixed;
-  bottom: 5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  bottom: 3%;
+  right: 0;
+  cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -719,8 +718,8 @@ header .menu-open > span:nth-child(2) {
 }
 
 .btn-form:hover {
-  -webkit-transform: translate(-50%, -58%);
-          transform: translate(-50%, -58%);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -1021,11 +1020,11 @@ footer .SNS_links a {
           transform: translateY(-30px);
 }
 
-.question .border1 {
+.question .border2 {
   border: solid 5px rgba(15, 139, 240, 0.966);
 }
 
-.question .border2 {
+.question .border1 {
   border: solid 5px rgba(240, 49, 15, 0.966);
 }
 
@@ -1400,5 +1399,14 @@ footer {
   .feature-box:nth-of-type(1) {
     margin-top: -50px;
   }
+}
+
+.timer {
+  font-size: 15px;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  color: orange;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
