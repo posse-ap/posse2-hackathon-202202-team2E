@@ -1,3 +1,7 @@
+.main {
+  overflow: hidden;
+}
+
 .section-event {
   margin-bottom: 150px;
 }
@@ -30,7 +34,214 @@
   width: 50%;
 }
 
+.swiper {
+  width: 100%;
+  height: 70%;
+}
+
+.swiper .swiper-slide {
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper .swiper-slide-active .hero_text {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.swiper .swiper-slide img {
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-150%, -50%);
+          transform: translate(-150%, -50%);
+  opacity: 0;
+  font-size: 50px;
+  color: white;
+  -webkit-transition: opacity 0.5s 1s, -webkit-transform 0.5s 1s;
+  transition: opacity 0.5s 1s, -webkit-transform 0.5s 1s;
+  transition: transform 0.5s 1s, opacity 0.5s 1s;
+  transition: transform 0.5s 1s, opacity 0.5s 1s, -webkit-transform 0.5s 1s;
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
+  font-family: "Kaisei Opti", serif;
+  font-family: "Lobster", cursive;
+  font-family: "RocknRoll One", sans-serif;
+  font-family: "Rowdies", cursive;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 0 0 10px !important;
+  background: #09b7ec !important;
+}
+
+.swiper-pagination-bullet:first-child {
+  margin: 0 !important;
+}
+
 .section-features {
   margin-top: 10px;
+}
+
+footer {
+  width: 90%;
+}
+
+.tower {
+  width: 100%;
+  height: 95vh;
+  background-color: wheat;
+}
+
+.tower .composition {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.tower .composition img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+  border-radius: 40px;
+}
+
+.section-about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: wheat;
+  margin-top: 20px;
+}
+
+.section-about h2 {
+  text-align: center;
+}
+
+.section-about .clip {
+  width: 50px;
+  height: 50px;
+}
+
+.section-about .composition {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.section-about .composition img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+  border-radius: 40px;
+}
+
+.section-about:nth-of-type(2n-1) {
+  -webkit-transform: rotate(-12deg) translate(-150px, 150px);
+          transform: rotate(-12deg) translate(-150px, 150px);
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.section-about:nth-of-type(2n) {
+  -webkit-transform: rotate(12deg) translate(150px, 150px);
+          transform: rotate(12deg) translate(150px, 150px);
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.skew:nth-of-type(2n-1) {
+  -webkit-transform: rotate(-12deg) translate(0, 0);
+          transform: rotate(-12deg) translate(0, 0);
+  opacity: 1;
+}
+
+.skew:nth-of-type(2n) {
+  -webkit-transform: rotate(12deg) translate(0, 0);
+          transform: rotate(12deg) translate(0, 0);
+  opacity: 1;
+}
+
+.card {
+  width: 20%;
+}
+
+.card:hover .card__side--front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.row {
+  margin-bottom: 150px;
+}
+
+.card-1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 23%;
+}
+
+.card-2 {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 23%;
+}
+
+.card-3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 23%;
+}
+
+.card-4 {
+  position: absolute;
+  top: 0%;
+  left: 75%;
+  width: 23%;
+}
+
+.card-5 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 20%;
+}
+
+@media (max-width: 912px) {
+  footer {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=freePage.css.map */
