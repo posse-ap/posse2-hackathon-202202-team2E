@@ -49,8 +49,10 @@ body {
   overflow: hidden;
 }
 header {
-  width: 90%;
+  background-color: rgba(#fff, 0.5);
+  width: 100vw;
   margin: 0 auto;
+  padding: 0 20px 0;
   height: 80px;
   z-index: 9999;
   display: flex;
@@ -534,7 +536,6 @@ section{
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: white;
     position: absolute;
     top: 12rem;
     right: 2rem;
@@ -603,6 +604,9 @@ section{
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
+    p{
+      color: #f5deb3;
+    }
   }
 
   &__price-box {
