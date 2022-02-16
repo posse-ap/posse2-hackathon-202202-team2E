@@ -764,7 +764,7 @@ section h4 {
   border-radius: 100px;
   position: fixed;
   bottom: 3%;
-  right: 0;
+  right: 2%;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1390,8 +1390,8 @@ footer {
   font-size: 15px;
   position: fixed;
   bottom: 10%;
-  right: 0;
-  color: orange;
+  right: 2%;
+  color: black;
   font-weight: 900;
 }
 
@@ -1419,5 +1419,17 @@ footer {
 
 .heading-tertiary {
   letter-spacing: 20px;
+}
+
+.heading-tertiary {
+  font-family: 'Sawarabi Mincho', serif;
+}
+
+.section-features .heading-tertiary {
+  letter-spacing: 2px;
+}
+
+.apeal p {
+  font-family: 'Sawarabi Mincho', serif;
 }
 /*# sourceMappingURL=style.css.map */
