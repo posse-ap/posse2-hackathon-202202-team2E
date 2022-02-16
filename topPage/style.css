@@ -22,8 +22,10 @@ body {
 }
 
 header {
-  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
   margin: 0 auto;
+  padding: 0 20px 0;
   height: 80px;
   z-index: 9999;
   display: flex;
@@ -482,7 +484,6 @@ section h4 {
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
-  color: white;
   position: absolute;
   top: 12rem;
   right: 2rem;
@@ -519,6 +520,9 @@ section h4 {
   transform: translate(-50%, -50%);
   width: 90%;
   text-align: center;
+}
+.card__cta p {
+  color: #f5deb3;
 }
 .card__price-box {
   text-align: center;
@@ -941,10 +945,6 @@ footer {
 }
 @media (max-width: 912px) {
   .main {
-    width: 95%;
-  }
-
-  header {
     width: 95%;
   }
 
