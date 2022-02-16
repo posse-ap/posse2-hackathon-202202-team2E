@@ -115,14 +115,14 @@ header {
       color: white;
       text-shadow: black 2px 2px 5px;
       font-weight: 900;
-      font-size: 20px;
+      font-size: 40px;
       &:hover {
         text-decoration: underline;
       }
     }
   }
   & .inview {
-    transform: none;
+    transform: translateX(100%);
     opacity: 1;
   }
   & .menu-open {
@@ -1088,4 +1088,12 @@ footer{
 .inview2{
   transform: none;
   opacity: 1;
+}
+
+.heading-secondary{
+  margin-bottom: 50px;
+}
+
+.heading-tertiary{
+  letter-spacing: 20px;
 }
