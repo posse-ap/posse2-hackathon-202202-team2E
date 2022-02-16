@@ -366,9 +366,9 @@ function cellClick(line, column) {
   turnOverStone(line, column);
   const turnShower = document.getElementById("turnShower");
   if(turn === "black"){
-    turnShower.innerHTML = "白の番です";
+    turnShower.innerHTML = "白";
   }else{
-    turnShower.innerHTML = "黒の番です";
+    turnShower.innerHTML = "黒";
   }
   temp = turn;
   turn = opponent;
