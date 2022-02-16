@@ -1,0 +1,1099 @@
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  // background-image: url("background-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c";
+  background-image: url(img/background.jpg);
+}
+
+// // プルプルアニメーションつけました
+// img:hover {
+//   animation: yureru-s 2s infinite;
+// }
+// @keyframes yureru-s {
+//   0% {
+//     transform: translate(2px, 0px);
+//   }
+//   5% {
+//     transform: translate(-2px, 0px);
+//   }
+//   10% {
+//     transform: translate(2px, 0px);
+//   }
+//   15% {
+//     transform: translate(-2px, 0px);
+//   }
+//   20% {
+//     transform: translate(2px, 0px);
+//   }
+//   25% {
+//     transform: translate(-2px, 0px);
+//   }
+//   30% {
+//     transform: translate(0px, 0px);
+//   }
+// }
+
+#container {
+  max-width: 100vw;
+  overflow: hidden;
+}
+header {
+  background-color: rgba(#fff, 0.5);
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 20px 0;
+  height: 80px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  // background-image: url("background-img.jpg");
+  // background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: "Kaisei Decol";
+  & h1 {
+    font-size: 30px;
+    text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f007";
+      display: inline-block;
+      transform: translateX(20px);
+      color: rgba(25, 109, 219, 0.8);
+      text-shadow: rgba(245, 208, 0, 0.6) 4px 4px 5px;
+    }
+  }
+  & .mobile-menu-icon {
+    position: relative;
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    z-index: 999;
+    & > span {
+      background-color: black;
+      width: 35px;
+      height: 3px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .menu-content {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateX(-300%);
+    opacity: 0;
+    transition: transform 0.8s, opacity 0.2s;
+    z-index: 999;
+    & li {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    & a {
+      color: white;
+      text-shadow: black 2px 2px 5px;
+      font-weight: 900;
+      font-size: 40px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  & .inview {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  & .menu-open {
+    & > span {
+      background-color: #fff;
+      &:nth-child(1) {
+        transition-delay: 70ms;
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transition-delay: 140ms;
+        transform: translateY(0px) rotate(-135deg);
+      }
+    }
+  }
+}
+// background追加しましたby夏蓮
+
+
+
+.black-back {
+  width: 300%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: -200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+.blacky {
+  visibility: visible !important;
+}
+footer{
+  width: 100%!important;
+}
+.main {
+  width: 100%!important;
+  width: 90%;
+  margin: 0 auto;
+  // overflow: hidden;
+  & .pageTop {
+    font-family: "Kaisei Decol";
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 80px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      url(../topPage/img/POSSE②_keyVisual.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 80vh, 100% 0);
+    &_main {
+      position: absolute;
+      top: 38%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 60px;
+      letter-spacing: 30px;
+      text-transform: uppercase;
+      @include animation($name: leftSlide, $duration: 1s);
+    }
+    @keyframes leftSlide {
+      0% {
+        opacity: 1;
+        transform: translateX(-500px);
+      }
+      80% {
+        transform: translateX(-40%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
+    }
+    &_sub {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      @include animation($name: rightSlide, $duration: 1s);
+    }
+    @keyframes rightSlide {
+      0% {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      80% {
+        transform: translateX(-60%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
+    }
+    & .btn-white {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      color: #777;
+      font-weight: 700;
+      padding: 15px 40px;
+      display: inline-block;
+      white-space: nowrap;
+      border-radius: 100px;
+      transition: all 0.2s;
+      @include animation(
+        $name: bottomSlide,
+        $duration: 1s,
+        $fill-mode: backwards
+      );
+      @keyframes bottomSlide {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -30%);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+      &:hover {
+        transform: translate(-50%, -58%);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        &::after {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.heading-secondary {
+  font-family: "Kaisei Decol";
+  padding-left: 20px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(35, 209, 240, 0.8),
+    rgba(17, 115, 228, 0.8),
+    rgba(1, 63, 235, 0.8)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 10px;
+  cursor: pointer;
+  // transition: all 0.2s;
+  // &:hover {
+  //   transform: skewY(10deg) skewX(5deg) scale(1.05);
+  //   text-shadow: 5px 10px 20px rgba($color: #000000, $alpha: 0.2);
+  // }
+}
+
+section{
+  p{
+    padding-left: 20px;
+  }
+  h4{
+    padding-left: 20px;
+  }
+}
+.heading-tertiary {
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph{
+  font-size: 25px;
+  padding-left: 20px;
+}
+.section-about {
+  margin-top: 200px;
+  width: 100%;
+}
+.composition {
+  margin-top: 50px;
+  position: relative;
+  &__photo {
+    width: 50%;
+    box-shadow: 0 15px 40px rgba($color: #000000, $alpha: 0.4);
+    border-radius: 2px;
+    position: absolute;
+    outline-offset: 20px;
+    transition: all 0.2s;
+    height: 500px;
+    object-fit: cover;
+    &--p1 {
+      left: 0;
+      top: -20px;
+    }
+    &--p2 {
+      right: 0;
+      top: 20px;
+    }
+    &--p3 {
+      left: 20%;
+      top: 100px;
+    }
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 25px 40px rgba($color: #000000, $alpha: 0.5);
+      z-index: 20;
+      outline: 15px solid rgba(15, 139, 240, 0.966);
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 500px;
+  width: 30%;
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
+
+    &--front {
+      background-color: wheat;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+       background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      }
+
+      &-2 {
+       background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      }
+
+      &-3 {
+       background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      }
+      &-4 {
+       background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      }
+      &-5 {
+       background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
+      ),
+        url(img/akira_1.jpg);
+      background-size: contain;
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
+      ),
+        url(img/karen_1.jpg);
+      background-size: contain;
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
+      ),
+        url(img/onokan_1.jpg);
+      background-size: contain;
+    }
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
+      ),
+        url(../freePage/img/tower-pretty.jpg);
+      background-size: contain;
+    }
+    &--5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.6),
+        rgba(17, 115, 228, 0.6),
+        rgba(1, 63, 235, 0.6)
+      ),
+        url(../freePage/img/おのかん自転車.jpg);
+      background-size: contain;
+    }
+    &--6 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+        url(../freePage/img/はつモーで.jpg);
+      background-size: contain;
+    }
+    &--7 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      ),
+        url(../freePage/img/ボドゲこうへい.jpg);
+      background-size: contain;
+    }
+  }
+
+  &__heading {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    white-space: nowrap;
+
+    &--1 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+
+    &--2 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+
+    &--3 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+    &--4 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+    &--5 {
+      background-color: rgba(245, 222, 179,0.8);
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba(orange, 0.4),
+      //   rgba(orangered, 0.4)
+      // );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    p{
+      color: #f5deb3;
+    }
+  }
+
+  &__price-box {
+    text-align: center;
+    color: wheat;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    white-space: nowrap;
+    font-size: 40px;
+    font-weight: 100;
+  }
+  &__price-photo{
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    object-fit: cover;
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 912px), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: wheat;
+    box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 20px;
+    }
+  }
+}
+
+
+.card {
+  &-1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+  }
+  &-2 {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    width: 30%;
+  }
+  &-3 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+  }
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.btn-form {
+  background-color: rgba(238, 91, 5, 0.8);
+  color: #000;
+  font-weight: 700;
+  padding: 15px 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 3%;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgba(238, 91, 5, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  &:hover {
+    transform: translateX(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
+
+
+.section-features{
+  height: 90vh;
+  position: relative;
+  margin-top: -200px;
+  padding: 300px 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(35, 209, 240, 0.8),
+    rgba(17, 115, 228, 0.8),
+    rgba(1, 63, 235, 0.8)
+  ),
+  url(../topPage/img/POSSE②_keyVisual.jpg);
+  clip-path: polygon(0% 18vh,0% 100%,100% 100%,100% 0%);
+  background-size: cover;
+  & a{
+    font-family: "Kaisei Decol";
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    color: #777;
+    font-weight: 700;
+    padding: 15px 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 100px;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      background-color: rgba($color: #ffffff, $alpha: 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.5s;
+    }
+    &:hover {
+      transform: translate(-50%, -10px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      &::after {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.row2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-box{
+  background-color: rgba($color: #ffffff, $alpha: .6);
+  font-size: 15px;
+  padding: 25px;
+  margin: 0 20px;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px rgba($color: #000000, $alpha: .15);
+  transition: transform .2s;
+  &:hover{
+    transform: translateY(-15px) scale(1.03);
+  }
+  & img{
+    margin-top: 20px;
+    height: 50%;
+  }
+  & h3{
+    font-size: 25px;
+  }
+}
+
+.flow{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 123, 0);
+  white-space: nowrap;
+  font-weight: 900;
+  margin-top: -100px;
+}
+
+.apeal{
+  width: 100%;
+  font-size: 42px;
+  overflow: hidden;
+  & img{
+    object-fit: cover;
+
+    min-width: 450px;
+    height: 450px;
+    box-shadow: rgba(1, 63, 235, 0.8) 3px 3px 10px;
+    border-radius: 50%;
+  }
+  & .apeal1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0px  10px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  }
+  & .apeal2{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    padding:0px  10px;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+  }
+  & .apeal3{
+    display: flex;
+    align-items: center;
+    padding: 0px  10px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  }
+  & .apealChild{
+    background-color: rgba(245, 222, 179,0.8);
+    padding: 50px;
+    & span{
+      font-family: "Kaisei Decol";
+      font-size:60px;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(35, 209, 240, 0.8),
+        rgba(17, 115, 228, 0.8),
+        rgba(1, 63, 235, 0.8)
+      );
+  -webkit-background-clip: text;
+  color: transparent;
+    }
+    &:nth-of-type(1){
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: opacity 2s,transform 2s;
+    }
+    &:nth-of-type(2){
+      opacity: 0;
+      transform: translateX(150px);
+      transition: opacity 2s,transform 2s;
+      background-color: rgba(245, 222, 179,0.4);
+    }
+    &:nth-of-type(3){
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: opacity 2s,transform 2s;
+    }
+  }
+}
+.apeal{
+  & .xSlide{
+    &:nth-of-type(1){
+      transform: translateX(0);
+      opacity: 1;
+    }
+    &:nth-of-type(2){
+      transform: translateX(0);
+      opacity: 1;
+    }
+    &:nth-of-type(3){
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+footer{
+  width: 90%;
+  background-color: rgb(201, 237, 248);
+  padding-top: 30px;
+  h1{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+    font-size: 30px;
+    text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+    }
+  }
+  .SNS_links{
+    a{
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.quiz{
+  height: 70vh;
+  margin-bottom: 50px;
+  & h4{
+    font-size: 40px;
+  }
+}
+.question{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  & .selection{
+    max-width: 350px;
+    height: 350px;
+    background-color: rgba(245, 222, 179,0.5);
+    padding: 50px;
+    margin: 50px 0px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+    transition: transform .5s;
+    cursor: pointer;
+    &:hover{
+      transform: translateY(-30px);
+    }
+  }
+  & .border2{
+    border: solid 5px rgba(15, 139, 240, 0.966);
+  }
+  & .border1{
+    border: solid 5px rgba(240, 49, 15, 0.966);
+  }
+  &__valid{
+    &-effect{
+      position: relative;
+      visibility: hidden;
+      transform: translateY(-50px);
+      transition: transform 0.8s;
+      & .rotate{
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+    }
+    &-move{
+      transform: translateY(-200px);
+      visibility: visible!important;
+    }
+    &-modal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 9;
+      display: inline;
+      font-size: 70px;
+    }
+  }
+  &__invalid{
+    &-effect{
+      position: relative;
+      visibility: hidden;
+      transform: translateY(-100px);
+      transition: transform 0.8s;
+      & .rotate{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+    }
+    &-move{
+      transform: translateY(-450px);
+      visibility: visible!important;
+    }
+    &-modal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 9;
+      display: inline;
+      font-size: 70px;
+    }
+  }
+}
+
+.none{
+  pointer-events: none;
+}
+
+footer{
+  font-family: "Kaisei Decol";
+  background-color: rgba(68, 80, 148, 0.8);
+  font-weight: 900;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+@media  (max-width:1250px) {
+  @import "_1250Down.scss";
+}
+@media (max-width: 912px) {
+  @import "_912Down.scss";
+}
+@media (max-width: 600px) {
+  @import "_500Down.scss";
+}
+
+@media only screen and (max-width: 912px), only screen and (hover: none){
+  @import "_noneHover.scss";
+} 
+
+
+
+.timer{
+  font-size: 15px;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  color: orange;
+  font-weight: 900;
+}
+
+
+.sink{
+  display: none;
+}
+
+
+
+
+.scroll{
+  transform: translateY(200px);
+  opacity: 0;
+  transition:  all 1s;
+}
+
+.inview2{
+  transform: none;
+  opacity: 1;
+}
+
+.heading-secondary{
+  margin-bottom: 50px;
+}
+
+.heading-tertiary{
+  letter-spacing: 20px;
+}

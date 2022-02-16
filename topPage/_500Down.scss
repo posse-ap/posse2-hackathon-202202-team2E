@@ -1,0 +1,33 @@
+.main{
+  .pageTop{
+    &_main{
+      font-size: 40px;
+    }
+    &_sub{
+      font-size: 12px;
+    }
+  }
+}
+
+.section-features{
+  & a{
+    bottom: 0px;
+    padding: 5px;
+  }
+  & img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.feature-box{
+  height: 200px;
+}
+
+.flow{
+  font-size: 16px;
+}
+
+
+
+

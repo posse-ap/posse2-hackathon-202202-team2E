@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap');
+#gameArea{
+  width: 100%;
+  margin-bottom: 150px;
+  .productTitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Kaisei Decol";
+    font-size: 35px;
+    text-shadow: rgba(25, 109, 219, 0.6) 7px 7px 10px;
+  }
+
+  p{
+    display: block;
+    width: 50%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  #turnShower{
+    font-size: 20px;
+  }
+  #board{
+    width: 50vw;
+    max-width: 450px;
+    max-height: 450px;
+    height: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 1px;
+    padding: 0;
+    margin: 15px auto 0;
+    position: relative;
+    .cells{
+      width: 12.5%;
+      height: 12.5%;
+      background-color: green;
+      border: solid black 1px;
+      box-sizing: border-box;
+      .black{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: black;
+        border-radius: 50%;
+      }
+      .white{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+    .blackArea{
+      width: 12.5%;
+      height: 12.5%;
+      background-color: green;
+      border: solid black 1px;
+      box-sizing: border-box;
+      .black{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: black;
+        border-radius: 50%;
+      }
+      .white{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+    .whiteArea{
+      width: 12.5%;
+      height: 12.5%;
+      background-color: green;
+      border: solid black 1px;
+      box-sizing: border-box;
+      .black{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: black;
+        border-radius: 50%;
+      }
+      .white{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+    #gameSet{
+      position: absolute;
+      top: 37.5%;
+      left: 12.5%;
+      font-size: 25px;
+      width: 75%;
+      height: 25%;
+      text-align: center;
+      color: aqua;
+      font-weight: bold;
+      // background-color: yellow;
+    }
+  }
+  .noClick{
+    pointer-events: none;
+  }
+  #pass{
+    width: 100px;
+    text-align: center;
+    line-height: 2;
+    margin: 0 auto;
+    font-size: 25px;
+    border-radius: 50px;
+    border: solid black 3px;
+  }
+  #scoreArea{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+.section-features{
+  margin-top: 10px;
+}

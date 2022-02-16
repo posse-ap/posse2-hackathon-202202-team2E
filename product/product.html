@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../topPage/reset.css">
+  <link rel="stylesheet" href="../topPage/style.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="product.js" defer></script>
+  <script src="../topPage/top.js" defer></script>
+  <title>product</title>
+</head>
+<body>
+  <header class="head">
+    <h1><a href="../topPage/index.html">POSSE2</a></h1>
+    <button class="mobile-menu-icon" onclick="slider()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="menu-content">
+      <li><a href="../topPage/index.html">home</a></li>
+      <li><a href="../historyPage/history.html">History of POSSE②</a></li>
+      <li><a href="../freePage/freePage.html">Events</a></li>
+    </ul>
+    <div class="black-back"></div>
+  </header>
+  <div class="main">
+    <div class="pageTop">
+      <h1 class="pageTop_main">posse②</h1>
+      <h3 class="pageTop_sub">what we can create</h3>
+      <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true" class="btn btn-white" target="_blank" id="formLink_1">Go to form</a>
+    </div>
+
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          skills
+        </h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">なんとゲームも作れちゃう！</h3>
+        <p class="paragraph">初心者からスタートして、POSSE②で勉強を始めてから３ヶ月の2.5期生がこんなゲームを作りました。遊んでみてね！</p>
+      </div> 
+    </section>
+    <section id="gameArea">
+      <div class="productTitle">リバーシゲーム</div>
+      <p id="turnShower">黒の番です</p>
+      <p>おきたい場所をクリック！<br>(置けるところがなかったらPASSをクリック。お互いが連続してパスするとゲーム終了です。)</p>
+      <div id="board"></div>
+      <div id="pass" onclick="pass()">PASS</div>
+    </section>
+    <section class="section-features">  
+      <h2 class="heading-secondary flow">
+          POSSE②入会までの簡単3ステップ!
+      </h2>          
+      <div class="row2">
+        <div class="feature-box">
+          <i class="feature-box__icon icon-basic-world"></i>
+          <h3 class="heading-tertiary u-margin-bottom-small">入会フォームのリンクをクリック</h3>
+          <p class="feature-box__text">ページ内にあるリンクをクリックしてフォーム画面に移行しよう！</p>
+          <img src="img/iconmonstr-cursor-9-240.png" alt="">
+        </div>
+  
+        <div class="feature-box">
+          <h3 class="heading-tertiary u-margin-bottom-small">フォーム入力</h3>
+          <p class="feature-box__text">簡単入力30秒！</p>
+          <img src="img/iconmonstr-keyboard-13-240.png" alt="">
+        </div>
+  
+        <div class="feature-box">
+        <h3 class="heading-tertiary u-margin-bottom-small">入学式に参加</h3>
+          <p class="feature-box__text">ついにPOSSE②として活動開始！私たちと一緒に楽しもう！</p>
+          <img src="img/iconmonstr-party-6-240.png" alt="">
+        </div>
+      </div>
+      <a href="https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true" class="big-btn-form" target="_blank" id="formLink_2">GO to form</a>
+    </section>
+    <div class="sink" id="formLink_3">
+      <div class="goForm">
+        <h2 class="timer">POSSE②入学式まで
+      <p >あと<span id="day"></span>日<span id="hour"></span>時間<span id="min"></span>分<span id="sec"></span>秒</p></h2>
+        <p class="btn-form"><a href = "https://docs.google.com/forms/d/1iFjwRYh-WxPEn92TfUJ7ddOcWRiMJ_Uo8Xu68L904ZM/viewform?edit_requested=true" target="_blank">ここをクリックでPOSSE②に参加！</a></p>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <h1>
+      <a href="https://posse-ap.com/" target="_blank"><img src="../topPage/img/POSSE2_logo.png" alt="" width="100%"></a>
+    </h1>
+    <div class="SNS_links">
+      <a href="https://twitter.com/posse_program" target="_blank">twitter</a>
+      <a href="https://www.instagram.com/posse_programming/" target="_blank">instagram</a>
+      <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank">line</a>
+    </div>
+  </footer>
+</body>
+</html>
